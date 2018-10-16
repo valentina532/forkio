@@ -65,3 +65,7 @@ gulp.task('serve', function () {
     gulp.watch('./src/scss/*.scss', ['sass']).on('change', browserSync.reload);
     gulp.watch('./index.html').on('change', browserSync.reload)
 })
+
+gulp.task('default', ['serve'], function(){
+  console.log('=== ALL DONE ===')
+});
