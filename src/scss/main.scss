@@ -1,10 +1,9 @@
-@import 'header';
-@import 'footer';
-@import 'slick';
-@import 'slick-theme';
-
 $main_color: #27262a;
 $violet: #8d81ac;
+
+
+@import 'header';
+@import 'footer';
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -178,6 +177,9 @@ body {
         top: 150px;
         right: 0;
         margin-left: 10px;
-
+        
     }
 }
+
+@import 'slick';
+@import 'slick-theme';
