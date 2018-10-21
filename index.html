@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
+	<meta charset="UTF-8">
+	<title>Document</title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +10,48 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 
-    <title>Document</title>
+
 </head>
 
 <body>
+
+
+
+
     <header class="header">
         <div class="container">
-            <div class="header__logo"><img src="dist/img/logo.png" alt=""></div>
-            <button class="header__button">Buy Now</button>
-            <div class="navbar">
-                <ul class="navbar__list">
-                    <li class="navbar__list-item"><a href="#">Overview</a></li>
-                    <li class="navbar__list-item"><a href="#">About Fork</a></li>
-                    <li class="navbar__list-item"><a href="#">Buying Options</a></li>
-                    <li class="navbar__list-item"><a href="#">Support</a></li>
-                </ul>
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a class="header__logo-link" href="#">
+                        <img class="header__logo-images" src="dist/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Overview</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">About Fork</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Buying Options</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__menu-btn">Buy Now</button>
             </div>
         </div>
     </header>
 
     <div class="whatYouGet">
         <div class="container">
-            <h3 class="whatYouGet_header"><code>
-                    <</code>Here is what you get<code>>
-                </code></h3>
+            <h3 class="whatYouGet_header">
+                    &#60Here is what you get&#62
+                </h3>
 
             <div class="whatYouGetBlock">
                 <img class="whatYouGetBlock_img" src="dist/img/advantage1.png" alt="">
@@ -78,7 +97,7 @@
             </div>
 
 
-        </div>
+        <div>
         <img class="sublime_img" src="dist/img/sublime.png" alt="">
     </div>
     <!--end of what_you_get_block-->
@@ -105,11 +124,14 @@
     </div>
 
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="dist/js/slick.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="dist/js/slick.min.js">
+
+		</script>
 
     <script>
+			$(document).ready(function(){
         $('.one-time').slick({
             dots: true,
             infinite: true,
@@ -117,6 +139,7 @@
             slidesToShow: 1,
             adaptiveHeight: true
         });
+     });
     </script>
 </body>
 
