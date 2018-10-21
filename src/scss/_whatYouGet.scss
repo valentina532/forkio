@@ -1,0 +1,160 @@
+.whatYouGet {
+    background-color: #f4f4f4;
+
+    &_header {
+        margin: 0 auto;
+        font-weight: bold;
+        color: $violet;
+        font-size: 2em;
+        text-align: center;
+        padding: 40px 20px;
+    }
+}
+
+.whatYouGetBlock {
+    &_img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    &_header {
+        text-align: center;
+
+    }
+
+    &_text {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        color: #969ea5;
+        line-height: 1.75em;
+        font-size: 0.875em;
+        padding-bottom: 30px;
+    }
+}
+
+.sublime_img {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+
+}
+.carousel {
+    margin: 0 auto;
+    padding-top: 60px;
+    width: 70%;
+}
+.carousel {
+    .carousel_img {
+         border-radius: 50%;
+         width: 30%;
+
+    }
+    .carousel_personname {
+        display: block;
+    }
+
+}
+@media only screen and (min-width: 401px) and (max-width: 480px) {
+
+    .whatYouGetBlock {
+        &_img {
+            float: left;
+            margin-left: 20px;
+            width: 71px;
+        }
+    }
+
+    .whatYouGetBlock_info {
+        overflow: hidden;
+        padding-left: 30px;
+    }
+
+    .whatYouGetBlock_header {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .whatYouGetBlock_text {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 992px) {
+
+    .whatYouGetBlock {
+        &_img {
+            float: left;
+            margin-left: 30px;
+            margin-bottom: 0;
+            width: 71px;
+        }
+    }
+
+    .whatYouGetBlock_info {
+        overflow: hidden;
+        padding-left: 40px;
+    }
+
+    .whatYouGetBlock_header {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .whatYouGetBlock_text {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .whatYouGet {
+        padding-top: 100px;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .whatYouGet_header {
+        float: right;
+        padding: 0;
+        margin-right: 25px;
+        font-size: 3em;
+    }
+
+    .whatYouGetBlock {
+        width: 40%;
+
+        &_img {
+            float: left;
+            margin-left: 30px;
+            width: 71px;
+        }
+    }
+
+    .whatYouGetBlock_info {
+        overflow: hidden;
+        padding-left: 40px;
+    }
+
+    .whatYouGetBlock_header {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .whatYouGetBlock_text {
+        text-align: left;
+        padding-bottom: 20px;
+
+    }
+
+    .sublime_img {
+        width: 55%;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        margin-left: 10px;
+
+    }
+}
