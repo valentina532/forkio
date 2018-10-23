@@ -1,3 +1,5 @@
+
+
 .header {
 	background-color: $main_color;
 //	font: "Awesome";
@@ -38,10 +40,12 @@
 	color: $violet;
 	line-height: 15px;
 	transition: all .3s;
-}
+
 	&:hover {
 		color: #ffff;
 	}
+}
+
 
 	.header__menu-btn {
 
@@ -84,7 +88,7 @@
 
 	}
 
-	header__logo {
+	.header__logo {
 	margin-top: 20px;
 
 	}

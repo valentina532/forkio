@@ -304,7 +304,6 @@ template {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #fff;
   font-weight: 700;
   font-size: 16px;
   color: #27262a; }
@@ -316,9 +315,8 @@ body {
   margin-right: auto; }
 
 @media only screen and (max-width: 1200px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px; } }
+  padding-left: 20px;
+  padding-right: 20px; }
 
 ul,
 li {
@@ -356,10 +354,10 @@ li {
   -webkit-transition: all .3s;
   transition: all .3s; }
   .header__menu-link:hover {
-    color: #fff; }
+    color: #ffff; }
 
 .header__menu-btn {
-  color: #fff;
+  color: #ffff;
   background-color: #8d81ac;
   padding: 12px 35px 12px 35px;
   border-radius: 20px;
@@ -368,18 +366,18 @@ li {
   outline: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  margin-left: 45px;
-  margin-right: 40px; }
+  margin-right: 40px;
+  margin-left: 45px; }
   .header__menu-btn:hover {
     color: #8d81ac;
-    background-color: #fff; }
+    background-color: #ffff; }
 
 @media only screen and (max-width: 992px) {
   .header__inner {
-    height: 120px;
     -webkit-box-align: start;
     -ms-flex-align: start;
-    align-items: flex-start; }
+    align-items: flex-start;
+    height: 120px; }
   .header__menu {
     margin-left: -45px;
     margin-right: -45px;
@@ -429,19 +427,8 @@ li {
   width: 100%;
   margin-top: 25px;
   margin-bottom: 25px;
-  margin-left: 10px; }
-
-.carousel {
-  margin: 0 auto;
-  padding-top: 60px;
-  width: 70%; }
-
-.carousel .carousel_img {
-  border-radius: 50%;
-  width: 30%; }
-
-.carousel .carousel_personname {
-  display: block; }
+  margin-left: 10px;
+  overflow: hidden; }
 
 @media only screen and (min-width: 401px) and (max-width: 480px) {
   .whatYouGetBlock_img {
@@ -476,7 +463,8 @@ li {
   .whatYouGet {
     padding-top: 100px;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    height: 720px; }
   .whatYouGet_header {
     float: right;
     padding: 0;
@@ -498,10 +486,11 @@ li {
     text-align: left;
     padding-bottom: 20px; }
   .sublime_img {
-    width: 55%;
-    position: absolute;
-    top: 150px;
-    right: 0;
+    width: 60vw;
+    height: 33vw;
+    position: relative;
+    bottom: 560px;
+    left: 45%;
     margin-left: 10px; } }
 
 /* Slider */
@@ -725,3 +714,19 @@ li {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
+
+.feedback {
+  background-color: #ffffff;
+  /*slick carousel */ }
+  .feedback .carousel {
+    margin: 0 auto;
+    padding-top: 60px;
+    width: 70%; }
+    .feedback .carousel_img {
+      border-radius: 50%;
+      width: 30%; }
+    .feedback .carousel_personname {
+      display: block; }
+    .feedback .carousel_feedback {
+      text-align: center;
+      color: red; }

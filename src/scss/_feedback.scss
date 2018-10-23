@@ -1,0 +1,28 @@
+.feedback {
+    background-color: #ffffff;
+    // height: 300px;
+
+    .carousel {
+        margin: 0 auto;
+        padding-top: 60px;
+        width: 70%;
+
+        &_img {
+            border-radius: 50%;
+            width: 30%;
+        }
+
+        &_personname {
+            display: block;
+        }
+
+        &_feedback {
+            text-align: center;
+            color: red;
+
+        }
+    }
+
+    /*slick carousel */
+
+}
