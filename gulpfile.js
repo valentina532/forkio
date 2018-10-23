@@ -11,7 +11,7 @@ var autoprefixer = require('gulp-autoprefixer')
 
 
 gulp.task('clean', function () {
-    return gulp.src('./dist', {
+    return gulp.src('./dist/css/', {
             read: false
         })
         .pipe(clean())

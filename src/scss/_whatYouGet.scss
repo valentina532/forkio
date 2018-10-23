@@ -1,6 +1,8 @@
 .whatYouGet {
     background-color: #f4f4f4;
 
+
+
     &_header {
         margin: 0 auto;
         font-weight: bold;
@@ -39,24 +41,12 @@
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 10px;
+    overflow: hidden;
 
 }
-.carousel {
-    margin: 0 auto;
-    padding-top: 60px;
-    width: 70%;
-}
-.carousel {
-    .carousel_img {
-         border-radius: 50%;
-         width: 30%;
 
-    }
-    .carousel_personname {
-        display: block;
-    }
 
-}
+
 @media only screen and (min-width: 401px) and (max-width: 480px) {
 
     .whatYouGetBlock {
@@ -113,7 +103,9 @@
         padding-top: 100px;
         overflow: hidden;
         position: relative;
+        height: 720px;
 
+        // max-width: 1200px;
     }
 
     .whatYouGet_header {
@@ -150,11 +142,14 @@
     }
 
     .sublime_img {
-        width: 55%;
-        position: absolute;
-        top: 150px;
-        right: 0;
+        width: 60vw;
+        height: 33vw;
+        position: relative;
+        bottom: 560px;
+        left: 45%;
         margin-left: 10px;
-
+       
     }
+
 }
+
