@@ -1,12 +1,12 @@
-@import '_header';
-@import '_normalize'
 @import 'global';
 @import 'vars';
+@import '_normalize'
+@import '_header';
 @import 'header';
 @import '_whatYouGet'
-@import '_footer';
 @import 'slick';
 @import 'slick-theme';
+@import '_footer';
 
 
 

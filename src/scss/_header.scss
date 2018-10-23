@@ -1,5 +1,6 @@
 .header {
 	background-color: $main_color;
+//	font: "Awesome";
 
 }
 
@@ -17,16 +18,13 @@
 
 }
 
+.header__menu-list {
+
+	text-align: center;
+
+}
 
 
-//.header__logo--link {
-//// background-image: url(../../dist/img/logo.png);
-// color: $violet;
-// transition: all .3s;
-//}
-//&:hover {
-//	color: #ffff;
-//}
 
 .header__menu-item {
 	display: inline-block;
@@ -104,6 +102,8 @@
 		}
 
 }
+
+
 
 
 
