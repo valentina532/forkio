@@ -1,7 +1,6 @@
 .whatYouGet {
     background-color: #f4f4f4;
-
-
+    
 
     &_header {
         margin: 0 auto;
@@ -28,7 +27,8 @@
 
     &_text {
         text-align: center;
-        font-family: 'Lato', sans-serif;
+        font-family: $default_font;
+        font-weight: 500;
         color: #969ea5;
         line-height: 1.75em;
         font-size: 0.875em;
