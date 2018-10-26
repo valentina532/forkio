@@ -11,7 +11,7 @@ var autoprefixer = require('gulp-autoprefixer')
 
 
 gulp.task('clean', function () {
-    return gulp.src('./dist/css/', {
+    return gulp.src('dist', {
             read: false
         })
         .pipe(clean())
@@ -73,7 +73,7 @@ gulp.task('serve', function () {
     browserSync.init({
         server: "./"
     })
-    // gulp.src('./src/fonts/*').pipe(gulp.dest('./dist/fonts'));
+    gulp.src('./src/fonts/*').pipe(gulp.dest('./dist/fonts'));
     gulp.watch('./src/scss/*.scss', ['sass']).on('change', browserSync.reload);
     gulp.watch('./src/js/*.js', ['minify']).on('change', browserSync.reload);
     gulp.watch('./index.html').on('change', browserSync.reload);

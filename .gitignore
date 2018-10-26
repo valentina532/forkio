@@ -5,9 +5,5 @@
 # testing
 /coverage
 
-# production
-/build
+# Gulp install instructions.txt
 
-Gulp install instructions.txt
-testfile.txt
-/dist/
