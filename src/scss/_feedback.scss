@@ -1,28 +1,213 @@
-.feedback {
+.feedbackBlock {
     background-color: #ffffff;
-    // height: 300px;
+    font-family: $default_font;
 
     .carousel {
         margin: 0 auto;
         padding-top: 60px;
-        width: 70%;
+        width: 80%;
+    }
 
-        &_img {
+    .user {
+        &__img {
             border-radius: 50%;
-            width: 30%;
         }
 
-        &_personname {
+        &__personname {
             display: block;
+            font-family: $default_font;
+            font-size: 24px;
+            font-weight: bold;
         }
 
-        &_feedback {
-            text-align: center;
-            color: red;
+        &__nickname {
+            font-family: $default_font;
+            color: $violet;
+            font-size: 16px;
+        }
 
+        &__feedback {
+            text-align: center;
+            font-family: $second_font;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.4;
+            color: #333333;
+            width: 70%;
+        }
+    }
+}
+
+a {
+    color: $violet;
+}
+
+.followUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #f4f4f4;
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    &__btn {
+        height: 50px;
+        width: 240px;
+        border-radius: 3px;
+        border: none;
+        margin: 0 20px;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    &__text {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    &_theme_git {
+        background-color: #f3f3f3;
+
+        &:hover {
+            background-color: #2b414d;
+            color: #fff;
+            border: 1px solid #fff;
         }
     }
 
-    /*slick carousel */
+    &_theme_twitter {
+        background-color: #26a6d1;
+        color: #ffffff;
 
+        &:hover {
+            background-color: #fff;
+            color: #26a6d1;
+            border: 1px solid #26a6d1;
+        }
+    }
+
+    &_theme_fb {
+        background-color: #3b5998;
+        color: #ffffff;
+
+        &:hover {
+            background-color: #fff;
+            color: #3b5998;
+            border: 1px solid #3b5998;
+        }
+    }
+
+    &__block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+.fab {
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.counter {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 14px;
+    color: #848e97;
+    font-weight: normal;
+}
+
+/* *Subscribe section */
+.subscribe_section {
+    // margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__header {
+        font-size: 24px;
+        font-weight: 700;
+        padding: 33px 20px 35px 20px;
+    }
+}
+
+.form {
+    width: 95%;
+    text-align: center;
+
+    &__input {
+        width: 90%;
+        border-radius: 20px;
+        border: none;
+        padding: 17px 0 17px 27px;
+        margin-bottom: 15px;
+        color: #c8cbcf;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__submit {
+        margin: 19px 0 42px 0;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 480px) {
+    .form__input {
+        width: 70%;
+    }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 992px) {
+    .user {
+        &__img {
+            margin: 0 auto;
+        }
+        &__personname {
+            text-align: center;
+        }
+    }
+
+    .form__input {
+        width: 40%;
+        margin: 0 2%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .subscribe {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form__input {
+        width: 25%;
+        margin: 45px 10px;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+
+    .user {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        &__img {
+            margin-right: 25px;
+        }
+        &__personname {
+            margin-top: 40px;
+        }
+    }
 }

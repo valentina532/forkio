@@ -11,7 +11,7 @@ var autoprefixer = require('gulp-autoprefixer')
 
 
 gulp.task('clean', function () {
-    return gulp.src('./dist/css/', {
+    return gulp.src('dist', {
             read: false
         })
         .pipe(clean())
@@ -23,15 +23,27 @@ gulp.task('minify', function () {
         .pipe(gulp.dest('./dist/js'))
 })
 
+// gulp.task('sass', function () {
+//     return gulp.src('./src/scss/*.scss')
+//         .pipe(sass())
+//         .pipe(autoprefixer({
+//             browsers: ['last 2 versions'],
+//             cascade: false
+//         }))
+//         .pipe(gulp.dest('./dist/css'))
+// })
+
 gulp.task('sass', function () {
     return gulp.src('./src/scss/*.scss')
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
+        // .pipe(minify().on('error', minify.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
         .pipe(gulp.dest('./dist/css'))
 })
+
 
 gulp.task('imagemin', function () {
     return gulp.src('./src/img/*')
@@ -63,7 +75,8 @@ gulp.task('serve', function () {
     })
     gulp.src('./src/fonts/*').pipe(gulp.dest('./dist/fonts'));
     gulp.watch('./src/scss/*.scss', ['sass']).on('change', browserSync.reload);
-    gulp.watch('./index.html').on('change', browserSync.reload)
+    gulp.watch('./src/js/*.js', ['minify']).on('change', browserSync.reload);
+    gulp.watch('./index.html').on('change', browserSync.reload);
 })
 
 gulp.task('default', ['serve'], function(){

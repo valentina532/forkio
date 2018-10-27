@@ -21,8 +21,10 @@ html {
  */
 
 body {
-  margin: 0;
+  margin: 0 auto;
+
 }
+
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -338,4 +340,11 @@ template {
 
 [hidden] {
   display: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
 }

@@ -1,5 +1,3 @@
-
-
 .header {
 	background-color: $main_color;
 
@@ -25,8 +23,9 @@
 
 .header__menu-item {
 	display: inline-block;
-	& + .header__menu-item {
-	padding-left: 45px;
+
+	&+.header__menu-item {
+		padding-left: 45px;
 	}
 }
 
@@ -42,7 +41,7 @@
 }
 
 
-	.header__menu-btn {
+.header__menu-btn {
 
 	color: #ffff;
 	background-color: $violet;
@@ -55,25 +54,29 @@
 	font-weight: 700;
 	margin-right: 40px;
 	margin-left: 45px;
+
+
 	&:hover {
 		color: $violet;
 		background-color: #ffff;
-	}
+		border: 1px solid $violet;
 
 	}
 
-  @media only screen and (max-width : 992px) {
+}
+
+@media only screen and (max-width : 992px) {
 
 	.header__inner {
-	 align-items: flex-start;
-   height: 120px;
+		align-items: flex-start;
+		height: 120px;
 	}
 
-	.header__menu  {
-	margin-left: -45px;
-	margin-right: -45px;
-	margin-top: 80px;
-	width: 100%;
+	.header__menu {
+		margin-left: -45px;
+		margin-right: -45px;
+		margin-top: 80px;
+		width: 100%;
 	}
 
 	.header__menu-btn {
@@ -84,7 +87,7 @@
 	}
 
 	.header__logo {
-	margin-top: 20px;
+		margin-top: 20px;
 
 	}
 	.header__menu-list {
@@ -96,16 +99,14 @@
 
 
 	.header__menu-item {
-			padding-right: 22px;
-		& + .header__menu-item {
-	padding-left: 22px;
-	}
-			&:last-child {
-				padding-right: 0;
+		padding-right: 22px;
 
-			}
+		&+.header__menu-item {
+			padding-left: 22px;
 		}
 
+		&:last-child {
+			padding-right: 0;
 }
 
 @media only screen and (max-width : 767px) {
@@ -120,4 +121,7 @@
 
 
 
+		}
+	}
 
+}

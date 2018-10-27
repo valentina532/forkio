@@ -5,9 +5,11 @@
 # testing
 /coverage
 
-# production
-/build
+# Gulp install instructions.txt
 
+<<<<<<< HEAD
 Gulp install instructions.txt
 testfile.txt
 /dist/
+=======
+>>>>>>> a9853daecfd2f7e32e537d251d53a76141fffb06
