@@ -1,12 +1,14 @@
-@import '_global';
-@import '_vars';
-@import '_normalize'
-@import '_header';
-@import '_whatYouGet'
+$default_font: 'Montserrat', sans-serif;
+$second_font: 'Lato', sans-serif;
+$main_color: #27262a;
+$violet: #8d81ac;
+
+@import 'vars';
+@import 'normalize';
+@import 'global';
+@import 'header';
+@import 'whatYouGet';
 @import 'slick';
 @import 'slick-theme';
-@import '_footer';
-
-
-
-
+@import 'feedback';
+@import 'footer';
