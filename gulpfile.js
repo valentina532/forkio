@@ -79,6 +79,6 @@ gulp.task('serve', function () {
     gulp.watch('./index.html').on('change', browserSync.reload);
 })
 
-gulp.task('default', ['serve'], function () {
-    console.log('=== ALL DONE ===')
+gulp.task('default', ['serve'], function(){
+  console.log('=== ALL DONE ===')
 });
