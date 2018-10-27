@@ -2,7 +2,7 @@
 
 .header {
 	background-color: $main_color;
-//	font: "Awesome";
+
 
 }
 
@@ -20,11 +20,6 @@
 
 }
 
-.header__menu-list {
-
-	text-align: center;
-
-}
 
 
 
@@ -92,6 +87,12 @@
 	margin-top: 20px;
 
 	}
+	.header__menu-list {
+
+	text-align: center;
+
+}
+
 
 
 	.header__menu-item {
@@ -107,6 +108,13 @@
 
 }
 
+@media only screen and (max-width : 767px) {
+	padding-right: 5px;
+		& + .header__menu-item {
+	padding-left: 5px;
+	}
+
+}
 
 
 
