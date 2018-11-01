@@ -18,6 +18,8 @@
             font-family: $default_font;
             font-size: 24px;
             font-weight: bold;
+            color: #635c73;
+            
         }
 
         &__nickname {
@@ -122,7 +124,7 @@ a {
 
 /* *Subscribe section */
 .subscribe_section {
-    // margin: 0 auto;
+    margin: 0 auto;
     background-color: #f4f4f4;
 }
 
@@ -130,70 +132,222 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    text-align: center;
+
     &__header {
         font-size: 24px;
-        font-weight: 700;
+        font-weight: 500;
         padding: 33px 20px 35px 20px;
+
+        &-subscribe {
+            display: block;
+        }
+
+        &-callback {
+            display: none;
+        }
     }
 }
 
 .form {
-    width: 95%;
+    width: 100%;
     text-align: center;
 
     &__input {
-        width: 90%;
+        width: 85%;
         border-radius: 20px;
         border: none;
-        padding: 17px 0 17px 27px;
+        padding: 12px;
         margin-bottom: 15px;
-        color: #c8cbcf;
+        color: $main_color;
 
         &:focus {
             outline: none;
         }
+
+        &-email {
+            display: none;
+        }
+
+        &-name {
+            display: inline-block;
+        }
+
+        &-phone {
+            display: inline-block;
+        }
     }
+
 
     &__submit {
         margin: 19px 0 42px 0;
         text-transform: uppercase;
         font-weight: 300;
+        font-size: 13px;
+
+
+        &-callme {
+            display: none;
+        }
+
+        &-subscribe {
+            display: inline-block;
+        }
+
     }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 480px) {
-    .form__input {
-        width: 70%;
+@media only screen and (max-width: 480px) {
+    .subscribe {
+        flex-direction: column;
     }
+
+    .user {
+       &__img {
+           margin-left: 25px;
+           
+
+       }
+
+        &__personname {
+            text-align: center;
+
+
+        }
+
+    }
+}
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 480px) {
+
+    .subscribe {
+        display: block;
+    }
+
+    .form__input {
+        width: 50%;
+
+        &-name {
+            display: none;
+        }
+
+        &-phone {
+            display: none;
+        }
+
+        &-email {
+            display: inline-block;
+        }
+    }
+
+    .form__submit {
+        width: 35%;
+        margin-left: 10px;
+
+    }
+
 }
 
 
 @media only screen and (min-width: 481px) and (max-width: 992px) {
-    .user {
-        &__img {
-            margin: 0 auto;
+    .subscribe {
+        display: block;
+        text-align: center;
+
+    }
+
+    .subscribe__header {
+        &-subscribe {
+            display: none;
         }
-        &__personname {
-            text-align: center;
+
+        &-callback {
+            display: inline-block;
+            width: 80%;
+            color: $violet;
         }
     }
 
-    .form__input {
-        width: 40%;
-        margin: 0 2%;
+    .form {
+        text-align: center;
+
+        &__input {
+            width: 45%;
+
+            &-name {
+                display: inline-block;
+                // float: left;
+                margin-right: 15px;
+            }
+
+            &-phone {
+                display: inline-block;
+            }
+
+            &-email {
+                display: none;
+            }
+        }
+    }
+
+
+    .form__submit {
+        margin-left: 9px;
+
+        &-subscribe {
+            display: none;
+        }
+
+        &-callme {
+            display: inline-block;
+        }
     }
 }
 
+
+
 @media only screen and (min-width: 993px) {
     .subscribe {
-        display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
+
     }
 
-    .form__input {
-        width: 25%;
-        margin: 45px 10px;
+    .form {
+        width: 70%;
+        margin-top: 25px;
+
+        &__input {
+            width: auto;
+            margin-left: 10px;
+        }
+
+        &__submit {
+            margin-left: 9px;
+
+            &-subscribe {
+                display: none;
+            }
+
+            &-callme {
+                display: inline-block;
+            }
+        }
+    }
+
+
+    .subscribe__header {
+        &-subscribe {
+            display: none;
+        }
+
+        &-callback {
+            display: inline-block;
+            color: $violet;
+
+        }
     }
 }
 
@@ -203,9 +357,11 @@ a {
         margin-bottom: 20px;
         display: flex;
         flex-direction: row;
+
         &__img {
             margin-right: 25px;
         }
+
         &__personname {
             margin-top: 40px;
         }
