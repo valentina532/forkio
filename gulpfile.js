@@ -45,7 +45,7 @@ gulp.task('minify', function () {
         // .pipe(minify().on('error', minify.logError))
         .pipe(minify())
         .pipe(concat('main.min.js'))
-        .pipe(gulp.dest('./dist/js')) 
+        .pipe(gulp.dest('./dist/js'))
 })
 
 
@@ -71,13 +71,13 @@ gulp.task('fonts', function () {
 
 
 gulp.task('build', gulpSequence('clean', ['sass', 'autoprefixer', 'imagemin', 'fonts', 'minify']))
-
-gulp.task('dev', function () {
-    browserSync.init({
-        server: "./"
+gulp.task('serve', function () {
+        browserSync.init({
+            server: "./"
     })
     gulp.watch('./src/scss/*.scss', ['sass']).on('change', browserSync.reload);
     gulp.watch('./src/js/*.js', ['minify']).on('change', browserSync.reload);
     gulp.watch('./index.html').on('change', browserSync.reload);
 })
 
+gulp.task('dev', ['build', 'serve'])

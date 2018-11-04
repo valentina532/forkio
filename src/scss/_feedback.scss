@@ -6,6 +6,8 @@
         margin: 0 auto;
         padding-top: 60px;
         width: 80%;
+        overflow: hidden;
+        
     }
 
     .user {
@@ -198,8 +200,21 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
+    // .carousel {
+
+    //     overflow: hidden;
+
+    // }
     .subscribe {
         flex-direction: column;
+    }
+    .slick-next {
+        right: -6px;
+
+    }
+    .slick-prev {
+        left: 6px;
+
     }
 
     .user {
@@ -221,7 +236,11 @@ a {
 
 
 @media only screen and (min-width: 401px) and (max-width: 480px) {
+    // .carousel {
+    //     overflow: hidden;
 
+
+    // }
     .subscribe {
         display: block;
     }
@@ -355,6 +374,8 @@ a {
 
     .user {
         margin-bottom: 20px;
+        margin-left: 40px;
+        
         display: flex;
         flex-direction: row;
 

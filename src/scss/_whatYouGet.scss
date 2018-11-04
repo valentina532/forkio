@@ -8,7 +8,6 @@
         font-weight: bold;
         color: $violet;
         font-size: 2.5em;
-
         text-align: center;
         padding: 40px 20px;
     }
@@ -35,7 +34,6 @@
         font-weight: 500;
         color: #969ea5;
         line-height: 1.25em;
-
         font-size: 0.875em;
         padding-bottom: 30px;
     }
@@ -49,7 +47,6 @@
     overflow: hidden;
 
 }
-
 
 
 @media only screen and (min-width: 401px) and (max-width: 480px) {
@@ -75,6 +72,10 @@
     .whatYouGetBlock_text {
         text-align: left;
     }
+
+
+
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 992px) {
@@ -96,6 +97,8 @@
     .whatYouGetBlock_header {
         text-align: left;
         margin-top: 0;
+        margin-right: 0;
+
     }
 
     .whatYouGetBlock_text {
@@ -103,13 +106,13 @@
     }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 993px)  {
     .whatYouGet {
-        padding-top: 50px;
+        padding-top: 80px;
         overflow: hidden;
         position: relative;
-        height: 650px;
-
+        height: 670px;
+        
 
 
     }
@@ -117,14 +120,15 @@
     .whatYouGet_header {
         float: right;
         padding: 0;
-        margin-right: 25px;
+        // margin-right: 25px;
+        // margin-top: -25px;
+
+
         font-size: 2.5em;
     }
 
     .whatYouGetBlock {
         width: 44%;
-
-
 
         &_img {
             float: left;
@@ -161,12 +165,11 @@
 
 
     .sublime_img {
-        width: 60vw;
-        height: 40vw;
-        position: relative;
-        bottom: 500px;
-
-        left: 50%;
+        width: 54vw;
+        height: 74%;
+        position: absolute;
+        bottom: 10px;
+        left: 45%;
         margin-left: 10px;
 
 
