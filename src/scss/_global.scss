@@ -1,29 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
+	margin: 0 auto;
 	font-family: $default_font;
-	font-weight: 700;
+	// font-weight: 700;
 	font-size: 16px;
 	color: $main_color;
-
-
+	
 }
 
 .container {
 	max-width: 1200px;
-	width: 100%;
+	min-width: 320px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0 15px;
-	
-}
-
-@media only screen and (max-width : 1200px) {
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 
 }
+
+// @media only screen and (max-width : 1200px) {
+// 	padding-left: 20px;
+// 	padding-right: 20px;
+
+// }
 
 ul,
-
 li {
 	margin: 0;
 	padding: 0;
