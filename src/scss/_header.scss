@@ -1,10 +1,10 @@
 .header {
 	background-color: $main_color;
-
-
 }
 
-
+.header__logo{
+	cursor: pointer;
+}
 
 .header__inner {
 	display: flex;
@@ -12,6 +12,22 @@
 	align-items: center;
 	height: 100px;
 }
+
+.header__logo-link {
+display: inline-block;
+line-height: 16px;
+transition: all, .3s;
+height: 45px;
+width: 151px;
+
+
+}
+.header__logo:hover {
+	.header__logo-link {
+		content: url(../../dist/img/Forkio_hover.png);
+	}
+	}
+
 
 .header__menu {
 	margin-left: auto;
@@ -37,32 +53,52 @@
 
 	&:hover {
 		color: #ffff;
+
 	}
 }
 
 
 .header__menu-btn {
 
-	color: #ffff;
-	background-color: $violet;
-	padding: 12px 35px 12px 35px;
-	border-radius: 20px;
-	display: inline-block;
-	border: none;
-	outline: none;
-	font-family: $default_font;
-	font-weight: 700;
-	margin-right: 40px;
-	margin-left: 45px;
+    border: 1px solid #8d81ac;
+    color: #ffff;
+    background-color: #8d81ac;
+    padding: 12px 35px 12px 35px;
+    border-radius: 20px;
+    display: inline-block;
+    /* border: none; */
+    outline: none;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    margin-left: 45px;
+    cursor: pointer;
 
 
 	&:hover {
 		color: $violet;
 		background-color: #ffff;
-		border: 1px solid $violet;
+
 
 	}
 
+}
+
+.btn__menu {
+	display: none;
+	width: 26px;
+	height: 22px;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	justify-content: flex-end;
+	.btn-row {
+		height: 3px;
+		border-radius: 1px;
+		border-color: white;
+		&:first-child {
+			width: 20px;
+		}
+	}
 }
 
 @media only screen and (max-width : 992px) {
@@ -107,21 +143,31 @@
 
 		&:last-child {
 			padding-right: 0;
+		}
+	}
 }
-
 @media only screen and (max-width : 767px) {
-	padding-right: 5px;
+//	padding-right: 5px;
 		& + .header__menu-item {
 	padding-left: 5px;
 	}
 
 }
+	@media only screen and (max-width : 480px) {
+		.header__menu {
+			ul {
+				display: none;
+			}
+		}
+		.btn__menu {
+			display: block;
+		}
 
-
-
+		.header__menu-btn {
+			padding: 12px 24px 12px 24;
+			width: 130px;
 
 
 		}
-	}
 
-}
+	}

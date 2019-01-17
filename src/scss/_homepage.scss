@@ -1,0 +1,55 @@
+.homepage {
+	text-align: center;
+	padding-top: 60px;
+	background-image: url(../img/cover.jpg);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+
+}
+
+
+.Fork-App-title {
+	font-size: 82px;
+	line-height: 20px;
+	color: #ffff;
+	padding-bottom: 19px;
+
+}
+
+.Fork-App-text {
+	font-size: 30px;
+	line-height: 20px;
+	color: #73698d;
+
+}
+
+.Fork-App-shadow-text {
+	font-size: 16px;
+	line-height: 20px;
+	color: #848e97;
+	text-transform: uppercase;
+}
+
+.overlapping-btn {
+    color: #fff;
+    background-color: #8d81ac;
+    border-radius: 32px;
+    display: inline-block;
+    border: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    /* font-family: "Montserrat",sans-serif; */
+    font-weight: 700;
+    position: absolute;
+    transform: translate(-50%);
+    bottom: -30px;
+    padding: 21px 98px;
+
+}
+
+
+

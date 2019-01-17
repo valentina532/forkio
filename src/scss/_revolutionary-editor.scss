@@ -1,0 +1,80 @@
+.revolutionary-editor {
+    text-align: center;
+    background-color: #ffff;
+    height: 390px;
+
+
+}
+
+.disclaimer-text {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #848e97;
+}
+
+
+
+
+.title-text {
+
+    margin-top: 70px;
+    font-size: 54px;
+    color: #635c73;
+    line-height: 20px;
+    color: #635c73;
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+}
+
+.subtitle-text {
+
+    margin-top: 40px;
+    font-size: 21px;
+    line-height: 32px;
+    font-family: $second_font;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.pagehead-actions {
+    display: flex;
+    justify-content: center;
+
+    .action-li {
+        border: solid 1px #d5d5d5;
+        border-radius: 4px;
+        margin-right: 10px;
+//        .action-btn, action-num {
+//            padding: 6px;
+//        }
+
+    }
+
+     .action-li:last-child {
+
+        margin-right: 0;
+    }
+}
+
+.action-btn {
+    padding: 6px;
+    height: 100%;
+
+    span {
+        display: flex;
+        svg {
+            margin-right: 10px;
+        }
+    }
+}
+
+.action-num {
+    padding: 6px;
+}
+
+
+
