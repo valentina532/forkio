@@ -48,6 +48,13 @@
     transform: translate(-50%);
     bottom: -30px;
     padding: 21px 98px;
+    cursor: pointer;
+
+    &:hover {
+        color: $violet;
+        background-color: #ffff;
+
+    }
 
 }
 
